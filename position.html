@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container {
-            width: 300px;
-            height: 1000px;
-            border: 3px solid black;
-        }
-
         .box {
+            display: flex;           /* Flexbox 활성화 */
+            justify-content: center; /* 가로 중앙 정렬 */
+            align-items: center;     /* 세로 중앙 정렬 */
+            
+            /* 기존 코드에서 padding-top은 삭제하세요! */
+            background-color: orange;
             width: 300px;
             height: 100px;
-            background-color: orange; 
             position: fixed;
             top: 10px;
             left: 10px;
         }
 
+        .container {
+            background-color: skyblue;
+            width: 300px;
+            height: 1000px;
+            border: 3px solid;
+        }
     </style>
 </head>
 <body>
     
     <div class="container">
-        <div class="box">BOX</div>    
+        <div class="box">BOX
+        </div>
     </div>
-
 </body>
 </html>

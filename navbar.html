@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="http://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&display=swap" rel="stylesheet">
     <style>
 
-        
         body {
             margin: 0px;
             font-family: "Datatype", sans-serif;
@@ -23,47 +19,47 @@
             text-decoration: none;
             color: black;
         }
-        
-       ul {
-             margin: 0px;
+
+        ul {
+            margin: 0px;
             padding: 0px;
         }
 
         .navbar {
-            background-color:rgb(197, 248, 173);
+            background-color: antiquewhite;
             display: flex;
-            padding: 0px;
             justify-content: space-between;
             align-items: center;
+            padding: 0px;
         }
 
         .navbar__menu {
-            display: flex;
             list-style: none;
+            display: flex;
             padding: 0px;
         }
- 
+
         .navbar__logo a {
             font-size: 1.5rem;
         }
 
+        .navbar__icons li {
+            list-style: none;
+            font-size: 20px;
+        }
+
         .navbar__menu li {
-            padding: 8px 12px;
+            padding: 16px 12px;
         }
 
         .navbar__menu li:hover {
-            background-color: aliceblue;
+            background-color: white;
             border-radius: 12px;
         }
 
         .navbar__icons {
             display: flex;
-            list-style: none;
-            justify-content: center;
-            margin: 12px;
-            padding: 0px;
         }
-        
 
         @media (max-width: 400px) {
             .navbar {
@@ -76,39 +72,29 @@
                 text-align: center;
                 width: 100%;
             }
-
-           .navbar__icons {
-                display: flex;
-                list-style: none;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-            }
         }
-
     </style>
+
 </head>
 
 <body>
-    
     <nav class="navbar">
-    <!-- navbar 하위에 logo가 있다 -->
         <div class="navbar__logo">
             <a href="#">
-                <i class="fa-brands fa-dev"> bhw-rgb </i>
-            </a>            
+                <i class="fa-brands fa-dev"> bhw rgb</i>
+            </a>
         </div>
 
-            <ul class="navbar__menu">
-                <li><a href="">About</a></li>
-                <li><a href="resume_02.html">Resume</a></li>
-                <li><a href="">Gallery</a></li>
-            </ul>   
+        <ul class="navbar__menu">
+            <li><a href="">About</a></li>
+            <li><a href="">Resume</a></li>
+            <li><a href="">Gallery</a></li>
+        </ul>
 
-            <ul class="navbar__icons">
-                <li><i class="fa-brands fa-github"></i></li>
-                <li><i class="fa-brands fa-github"></i></li>
-            </ul>
+        <ul class="navbar__icons">
+            <li><a href="https://github.com/bhw-rgb"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
     </nav>
 </body>
+
 </html>
